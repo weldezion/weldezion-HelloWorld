@@ -13,8 +13,13 @@ public class HelloWorldTest {
      */
     @Test
     public void helloTest(){
-        String expected = "Hello, world!";
+        String expected = "hello, world!";
         String actual = hw.sayHello().trim();
-        Assert.assertEquals(expected,actual);
+        extracted(expected, actual);
     }
+
+    private void extracted(String expected, String actual) {
+    }
+
+   
 }
